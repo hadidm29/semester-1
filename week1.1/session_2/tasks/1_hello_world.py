@@ -1,2 +1,5 @@
 # a basic Hello World program - write your code under this line
-print("Hello world")
+name = input("Enter your name: ")
+
+print(f"Hello {name} ")
+
