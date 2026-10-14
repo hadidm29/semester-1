@@ -1,3 +1,4 @@
+
 """
 Portfolio Task - Week 1.3
 By submitting this code you are declaring that all work in this file, other than any provided template code, was written and developed by you independently.
@@ -13,6 +14,22 @@ state = "red"
 
 print(f"Time {systime:03} State {state}")
 
-# Simulate the traffic light system up to time=maxtime in 1-second steps
+currentTime = 0
 
-# At the end of each step you should output the time and state using the statement on line 14
+while systime < maxtime:
+    systime += 1
+    currentTime += 1
+
+    print(f"Time {systime:03} State {state}")
+
+    if currentTime >= states[state]:
+        currentTime = 0
+
+        if state == "red":
+            state = "red_amber"
+        elif state == "red_amber":
+            state = "green"
+        elif state == "green":
+            state = "amber"
+        elif state == "amber":
+            state = "red"
