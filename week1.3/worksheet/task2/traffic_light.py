@@ -20,8 +20,6 @@ while systime < maxtime:
     systime += 1
     currentTime += 1
 
-    print(f"Time {systime:03} State {state}")
-
     if currentTime >= states[state]:
         currentTime = 0
 
@@ -33,3 +31,5 @@ while systime < maxtime:
             state = "amber"
         elif state == "amber":
             state = "red"
+
+    print(f"Time {systime:03} State {state}")
