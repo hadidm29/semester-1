@@ -13,3 +13,7 @@
 
 # Optional: extend this by using a loop to allow multiple people to enter their info in a row
 # If you want multiple people to add info without overwriting, consider append mode 'a'
+
+name = input("Enter username")
+age = input("Enter user age")
+favColour = input("Enter favourite colour")
