@@ -13,16 +13,18 @@ from process_data import process_data
 def test_empty_list():
     # complete the implementation for
     # testing an empty list
-    
+    assert process_data([]) == None
     
 def test_one_int_list():
     # complete the implementation for 
     # testing a list with a single integer
-
+    x = [5]
+    assert process_data(x) == x
 
 def test_multiple_int_list():
     # complete the implementation for
     # testing a list with multiple integers
-
+    x=[1,2,3,4,5]
+    assert process_data(x) == sum(x)
     
     
